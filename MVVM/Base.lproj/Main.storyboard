@@ -46,20 +46,29 @@
                                     <action selector="authenticate" destination="BYZ-38-t0r" eventType="touchUpInside" id="sc6-qp-eAH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKw-nO-eCW">
+                                <rect key="frame" x="186" y="215" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FFa-U5-vEH" firstAttribute="top" secondItem="Gzm-DF-AJ4" secondAttribute="bottom" constant="10" id="4kE-cb-VHo"/>
                             <constraint firstItem="FFa-U5-vEH" firstAttribute="width" secondItem="Gzm-DF-AJ4" secondAttribute="width" id="Dzv-1H-1i5"/>
+                            <constraint firstItem="Gzm-DF-AJ4" firstAttribute="top" secondItem="xKw-nO-eCW" secondAttribute="bottom" constant="8" id="Gg0-2j-Swg"/>
                             <constraint firstItem="dp9-ff-1nd" firstAttribute="top" secondItem="FFa-U5-vEH" secondAttribute="bottom" constant="18" id="IIx-VB-l1Z"/>
                             <constraint firstItem="Gzm-DF-AJ4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jek-Aj-jak"/>
                             <constraint firstItem="Gzm-DF-AJ4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="bPg-qQ-Lkl"/>
                             <constraint firstItem="FFa-U5-vEH" firstAttribute="centerX" secondItem="Gzm-DF-AJ4" secondAttribute="centerX" id="ccM-pa-jAa"/>
                             <constraint firstItem="dp9-ff-1nd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lTD-Uc-xwr"/>
+                            <constraint firstItem="xKw-nO-eCW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rZr-1c-KyL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="codeLabel" destination="xKw-nO-eCW" id="0KK-Tc-N12"/>
                         <outlet property="passwordField" destination="FFa-U5-vEH" id="4iD-yM-j7S"/>
                         <outlet property="usernameField" destination="Gzm-DF-AJ4" id="9VL-eg-H9F"/>
                     </connections>

@@ -12,6 +12,7 @@ class LoginViewController: UIViewController
 {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var codeLabel: UILabel!
     
     private var viewModel = UserViewModel()
     
@@ -19,8 +20,14 @@ class LoginViewController: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // break the retain cycle but stay as long as it needs
+        viewModel.accessCode.bind { [unowned self] in
+            self.codeLabel.text = $0
+        }
+        
+        viewModel.username.bind {
+            print("Username changed: \($0)")
+        }
     }
 }
 
@@ -53,7 +60,7 @@ extension LoginViewController: UITextFieldDelegate
 {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == usernameField {
-            textField.text = viewModel.username
+            textField.text = viewModel.username.value
         }
     }
     

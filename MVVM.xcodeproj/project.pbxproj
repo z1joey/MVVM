@@ -15,6 +15,7 @@
 		652AD6072255332D00D6184A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652AD6062255332D00D6184A /* UserViewModel.swift */; };
 		652AD60A2255383800D6184A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652AD6092255383800D6184A /* LoginViewController.swift */; };
 		652AD60E225541E100D6184A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652AD60D225541E100D6184A /* LoginService.swift */; };
+		652AD6102255698A00D6184A /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652AD60F2255698A00D6184A /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		652AD6062255332D00D6184A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		652AD6092255383800D6184A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		652AD60D225541E100D6184A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		652AD60F2255698A00D6184A /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				652AD5F82255323E00D6184A /* Assets.xcassets */,
 				652AD5FA2255323E00D6184A /* LaunchScreen.storyboard */,
 				652AD5FD2255323E00D6184A /* Info.plist */,
+				652AD60F2255698A00D6184A /* Box.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				652AD60A2255383800D6184A /* LoginViewController.swift in Sources */,
 				652AD6072255332D00D6184A /* UserViewModel.swift in Sources */,
 				652AD60E225541E100D6184A /* LoginService.swift in Sources */,
+				652AD6102255698A00D6184A /* Box.swift in Sources */,
 				652AD5F22255323D00D6184A /* AppDelegate.swift in Sources */,
 				652AD605225532A800D6184A /* User.swift in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 import Foundation
 
+// because of struct, a new user will be created everytime after changing one of them
 struct User
 {
     var username = ""
